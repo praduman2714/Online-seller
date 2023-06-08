@@ -3,19 +3,23 @@
 <div class="home-container">
     <a href="/products/addInventory" class="add-inventory-button">Add Inventory</a>
     <a href="/users/logout" class="logout-button">Log Out</a>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">Search</button>
+    </div>
+
     <div class="product-list">
         <% if (products.length > 0) { %>
             <% products.forEach(function(product) { %>
                 <div class="product-card">
                     <% product.images.forEach(function(image) { %>
-                        
                         <img src="<%= image %>" alt="Product Image">
                     <% }); %>
                     <h3><%= product.productName %></h3>
                     <p>MRP: <%= product.MRP %></p>
                     <p>SP: <%= product.SP %></p>
                     <p>Quantity: <%= product.quantity %></p>
-                    
                     <button>Add to Cart</button>
                 </div>
             <% }); %>
@@ -24,3 +28,7 @@
         <% } %>
     </div>
 </div>
+
+<script src="js/home">
+    
+</script>

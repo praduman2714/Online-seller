@@ -69,4 +69,21 @@
     font-style: italic;
     color: #888888;
   }
+
+  .alreadyUser {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .alreadyUser a {
+    text-decoration: none;
+    color: #1744d5ce;
+    font-size: 14px;
+  }
+  
+  .alreadyUser a:hover {
+    color: #0725eae4;
+    text-decoration: underline;
+  }
+  
   

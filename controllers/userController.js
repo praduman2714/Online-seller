@@ -28,7 +28,12 @@ module.exports.createBuisness = async function(req, res){
     return res.redirect('back');
 }
 
-module.exports.storeInfo = function(req, res){
+module.exports.storeInfo = async function(req, res){
+    const storeUser = await Store.findOne({ bussinessRef: req.user._id });
+    console.log(storeUser);
+    if(storeUser){
+        return res.redirect('/');
+    }
     return res.render('storeInfo' , {
         title : 'Online Seller || Store Info'
     })
@@ -63,3 +68,16 @@ module.exports.createSession = async function(req, res){
 }
 
 // module.exports.singUP
+
+// Used for logout 
+module.exports.destroySession = function(req, res, done){
+    // req.flash('success' , 'Logged Out');
+    req.logout((err) => {
+        if (err) {
+            return done(err);
+        }
+    })
+    return res.redirect('/users/singIn');
+    
+    
+}

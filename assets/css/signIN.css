@@ -75,3 +75,21 @@ body {
 .submitButtons button:hover {
   background-color: #45a049;
 }
+
+.registerUser {
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.registerUser a {
+  text-decoration: none;
+  color: #1b4bbcc5;
+  font-size: 16px;
+}
+
+.registerUser a:hover {
+  color: #0989f1;
+  text-decoration: underline;
+}
+
