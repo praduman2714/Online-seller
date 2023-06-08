@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/addProductForm.css">
+
+<div class="add-product-form">
+    <h2>Add Product</h2>
+    <form action="/products/add" method="POST" >
+        <label for="category">Category:</label>
+        <input type="text" name="category" id="category" required><br>
+
+        <label for="subCategory">Sub Category:</label>
+        <input type="text" name="subCategory" id="subCategory" required><br>
+
+        <label for="productName">Product Name:</label>
+        <input type="text" name="productName" id="productName" required><br>
+
+        <label for="MRP">MRP:</label>
+        <input type="number" name="MRP" id="MRP" required><br>
+
+        <label for="SP">Selling Price:</label>
+        <input type="number" name="SP" id="SP" required><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" required><br>
+
+        <label for="images">Images:</label>
+        <input type="text" name="images" id="images"  required><br>
+
+        <button type="submit">Add Product</button>
+    </form>
+</div>
