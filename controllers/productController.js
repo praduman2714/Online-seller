@@ -8,14 +8,14 @@ module.exports.addInventory = function (req, res){
 
 
 module.exports.addProduct = async function(req, res) {
-    console.log(req.body);
+    // console.log(req.user);
   try {
     // Extract the data from the request body
     const { bussinessRef, category, subCategory, productName, MRP, SP, quantity, images } = req.body;
 
     // Create a new product object
     const newProduct = new Product({
-      bussinessRef,
+      bussinessRef : req.user._id,
       category,
       subCategory,
       productName,

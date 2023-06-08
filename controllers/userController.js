@@ -30,7 +30,7 @@ module.exports.createBuisness = async function(req, res){
 
 module.exports.storeInfo = async function(req, res){
     const storeUser = await Store.findOne({ bussinessRef: req.user._id });
-    console.log(storeUser);
+    // console.log(storeUser);
     if(storeUser){
         return res.redirect('/');
     }
