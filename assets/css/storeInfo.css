@@ -1,0 +1,60 @@
+/* CSS for sign.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+  
+  .outerform {
+    width: 30vw;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-form {
+    margin-top: 20px;
+  }
+  
+  .input-form input,
+  .input-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+  }
+  
+  .formClass {
+    margin-bottom: 20px;
+  }
+  
+  .formClass button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .formClass button:hover {
+    background-color: #45a049;
+  }
+  
