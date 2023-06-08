@@ -5,6 +5,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const expressLayout = require('express-ejs-layouts');
 
+const db = require('./config/mongoose'); // require the database
+
 
 // Setting up view engine
 app.set('view engine', 'ejs');
@@ -16,6 +18,7 @@ app.use(bodyParser.urlencoded({extended:false})); // since express does not have
 app.use(express.static('./assets'));
 
 app.use('/' , require('./routes/index'));
+
 
 
 app.listen(port, function(err){
