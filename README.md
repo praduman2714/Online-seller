@@ -51,7 +51,7 @@ After reaching the project directory you have to run the following the command.
 
   ### Add Store-Information
 
-  - Click on the "Add Store Info" tab in the navigation menu.
+  - Post Sign In, if you are the new user then you have add the store information. If you have already filled then you'll be directed to home page.
 
   - Fill the details, including address, gst number etc.
 
@@ -71,7 +71,7 @@ After reaching the project directory you have to run the following the command.
 
   ### View Inventory
 
-  - Click on the "Show Inventory" tab in the navigation menu.
+  - Click on the "Visti Website" button in the navigation to shop site.
 
   - It will take you to the "Show Inventory" tab.
 
