@@ -1,5 +1,6 @@
 const Buisness = require('../model/buisness');
-const Store = require('../model/store')
+const Store = require('../model/store');
+const Product = require('../model/products');
 
 module.exports.singUP = function(req, res){
     return res.render('SignUp', {
@@ -30,7 +31,7 @@ module.exports.createBuisness = async function(req, res){
 
 module.exports.storeInfo = async function(req, res){
     const storeUser = await Store.findOne({ bussinessRef: req.user._id });
-    // console.log(storeUser);
+    console.log(storeUser);
     if(storeUser){
         return res.redirect('/');
     }
@@ -81,3 +82,24 @@ module.exports.destroySession = function(req, res, done){
     
     
 }
+
+
+module.exports.shop = async function(req, res) {
+    try {
+        const uniqueId = req.params.uniqueId;
+        console.log(uniqueId);
+
+        const products = await Product.find({ bussinessRef: uniqueId });
+        const store = await Store.findOne({ bussinessRef: uniqueId });
+        
+        return res.render('shop', {
+            title: 'Online Seller || Shop',
+            products: products,
+            store : store
+        });
+    } catch (err) {
+        console.error('Error in fetching user products:', err);
+        
+    }
+};
+

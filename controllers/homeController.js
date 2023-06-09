@@ -1,6 +1,6 @@
 const Product = require('../model/products');
 module.exports.home = async function(req, res){
-
+    
     if(req.user){
         try {
             // Fetch all products from the database

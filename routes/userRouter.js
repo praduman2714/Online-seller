@@ -15,6 +15,8 @@ router.post('/create-session',passport.authenticate(
     {failureRedirect: '/users/singIn'},
 ) , userController.createSession);
 
+router.get('/shops/:uniqueId', userController.shop);
+
 router.get('/logout', userController.destroySession);
 
 module.exports = router;

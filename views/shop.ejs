@@ -1,17 +1,25 @@
-<link rel="stylesheet" href="/css/home.css"> 
+<link rel="stylesheet" href="/css/shop.css"> 
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton">Search</button>
+</div>
 
 <div class="home-container">
-    <a href="/products/addInventory" class="add-inventory-button">Add Inventory</a>
-    <a href="/users/logout" class="logout-button">Log Out</a>
-    <a href='/users/shops/<%= user._id %>' class="add-inventory-button">Visit website</a>
-
-
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search...">
-        <button id="searchButton">Search</button>
+    <div class="store-info">
+        <% if (store) { %>
+            <h3>Store Information</h3>
+            <p>Address: <%= store.address %></p>
+            <p>GST: <%= store.gst %></p>
+            <p>Category: <%= store.category %></p>
+        <% } %>
     </div>
 
+    
+
     <div class="product-list">
+        
+
         <% if (products.length > 0) { %>
             <% products.forEach(function(product) { %>
                 <div class="product-card">
@@ -31,6 +39,4 @@
     </div>
 </div>
 
-<script src="js/home">
-    
-</script>
+<script src="js/home"></script>
