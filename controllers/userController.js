@@ -9,7 +9,7 @@ module.exports.singUP = function(req, res){
 }
 
 module.exports.signIN = function(req, res){
-    return res.render('SignIN', {
+    return res.render('SignIn', { 
         title : 'Seller-Onlinee || Sign-IN'
     })
 }
