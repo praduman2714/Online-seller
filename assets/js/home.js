@@ -4,7 +4,8 @@ var searchButton = document.getElementById("searchButton");
 
 // Add event listener to the search button
 searchButton.addEventListener("click", function() {
-    var searchValue = searchInput.value.toLowerCase();
+    console.log("Clicked");
+    var searchValue = searchInput.value.toLowerCase(); 
 
     // Loop through each product card and hide/show based on search value
     var productCards = document.getElementsByClassName("product-card");
