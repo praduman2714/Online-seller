@@ -1,5 +1,6 @@
 # Online-seller
 LIVE LINK : https://online-seller.onrender.com
+
 MY SHOP LINK : https://online-seller.onrender.com/users/shops/6482e67aee6ae5f774e82bb6
 
 ## DESCRIPTION
@@ -24,7 +25,7 @@ Node , Express, Mongodb , EJS , javaScript , html, css
 After reaching the project directory you have to run the following the command.
    ```` 
         npm install 
-        npm start || nodemon index.js
+        node index.js || nodemon index.js
    ````
 
 # Images
